@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size : 10px ;
+     10px / 16px = 0.625 = 62.5% 
+    */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/******! Social icons ******/
+
+.social-icons {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0 0 8rem;
+  font-size: 1.8rem;
+}
+.social-item {
+  transition: transform 0.7s;
+}
+.social-item:hover {
+  transform: scale(1.2);
+}
+
+/******! Header ******/
+
+.header-img {
+  height: 85vh;
+  min-height: 60rem;
+  background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(images/home-avatar.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6)
+    ),
+    url(images/home-avatar.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  position: absolute;
+  margin: 18rem 8rem;
+  color: #000;
+  user-select: none;
+}
+
+/* (font-size: calc ) Bu CSS özelliği, tarayıcı genişliğine bağlı olarak bir fontun boyutunu dinamik olarak ayarlamak için kullanılır.
+calc fonksiyonu içindeki formül, belirli bir tarayıcı genişliği aralığında minimum ve maksimum font boyutları 
+arasında lineer bir geçiş sağlar. Bu sayede, web tasarımı responsive (duyarlı) hale getirilebilir,
+farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edilebilir. */
+
+.header-subtitle {
+  font-weight: 200;
+  font-size: calc(16px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+.header-title {
+  font-size: calc(20px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
+  opacity: 0.8;
+  line-height: 0.7;
+  margin-bottom: 2.5rem;
+}
+.header-mono {
+  font-weight: 500;
+  font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 0.5rem;
+}
+
+/******! Navbar ******/
+
+.nvbr {
+  font-size: 1.8rem;
+  box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
+}
+
+.nvbr ul li a {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  color: #000 !important;
+  transition: all 0.6s ease-in-out !important;
+}
+.nvbr ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+  color: #f62b45 !important;
+}
+
+.nvbr img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -weblit-transform: translate(-50%, -50%);
+  width: 17rem;
+  border: 8px solid white;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/*! bunu çıkart !*/
+
+@media only screen and (max-width: 520px) {
+  .header-img {
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(images/home-avatar2.jpg);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6)
+      ),
+      url(images/home-avatar2.jpg);
+    height: 85vh;
+    min-height: 60rem;
+    min-width: 60rem;
+    width: auto; /* Mobilde header'ın genişliğini otomatik belirle */
+  }
+  .social-link {
+    color: #fff !important;
+  }
+}
