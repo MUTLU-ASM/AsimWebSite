@@ -1,16 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  /* font-size : 10px ;
-     10px / 16px = 0.625 = 62.5% 
-    */
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
 /******! Social icons ******/
 
 .social-icons {
@@ -52,7 +39,7 @@ html {
 .header-content {
   position: absolute;
   margin: 18rem 8rem;
-  color: #000;
+  color: #fff;
   user-select: none;
 }
 
@@ -110,6 +97,9 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   cursor: pointer;
 }
 
+.py-10 {
+  padding: 5rem;
+}
 /*! bunu çıkart !*/
 
 @media only screen and (max-width: 520px) {

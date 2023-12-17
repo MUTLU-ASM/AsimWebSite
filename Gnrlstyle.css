@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size : 10px ;
+     10px / 16px = 0.625 = 62.5% 
+    */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+/******! Padding settings ******/
+.pyx-6 {
+  padding: 3rem;
+}
+.pyx-7 {
+  padding: 4rem;
+}
+.pyx-8 {
+  padding: 5rem;
+}
+/******! Margin settings ******/
+
+.mx-auto {
+  justify-content: center !important;
+}
+.mx-7 {
+  margin-left: 7rem;
+}
+.mx-8 {
+  margin-left: 8rem;
+}
+.mx-9 {
+  margin-left: 9rem;
+}
+/******! Line settings ******/
+
+.line {
+  display: block;
+  width: 25px;
+  height: 1.5px;
+  background-color: #f62b45;
+}
+
+/******! Font settings ******/
+.title {
+  font-size: calc(12px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+}
+.text {
+  color: #f85c70 !important;
+}
