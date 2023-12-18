@@ -11,6 +11,12 @@ html {
   overflow-x: hidden;
 }
 /******! Padding settings ******/
+.pyx-4 {
+  padding: 1rem;
+}
+.pyx-5 {
+  padding: 2rem;
+}
 .pyx-6 {
   padding: 3rem;
 }
@@ -18,6 +24,10 @@ html {
   padding: 4rem;
 }
 .pyx-8 {
+  padding: 5rem;
+}
+
+.py-10 {
   padding: 5rem;
 }
 /******! Margin settings ******/
@@ -33,6 +43,9 @@ html {
 }
 .mx-9 {
   margin-left: 9rem;
+}
+.mb-6 {
+  margin-bottom: 3rem;
 }
 /******! Line settings ******/
 

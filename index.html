@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>My Website</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -57,10 +57,10 @@
     <!--** Navbar **-->
 
     <div class="nvbr">
-      <div class="container text-center py-3">
+      <div class="container text-center py-4">
         <div class="row">
           <!--? First Links?-->
-          <div class="col">
+          <div class="col-lg-4">
             <ul class="nav">
               <li class="nav-item mx-4">
                 <a class="nav-link" aria-current="page" href="#">Anasayfa</a>
@@ -74,11 +74,11 @@
             </ul>
           </div>
           <!--? Profile avatar ?-->
-          <div class="col">
+          <div class="col d-none d-md-block">
             <img src="images/nav-avatar.jpg" alt="" />
           </div>
           <!--? Second Links?-->
-          <div class="col">
+          <div class="col-lg-4 offset-lg">
             <ul class="nav justify-content-end">
               <li class="nav-item">
                 <a class="nav-link mx-4" href="#">Çalışmalar</a>
@@ -101,7 +101,7 @@
       <div class="container py-10">
         <div class="row">
           <!--? First col?-->
-          <div class="col mx-2 border-end border-secondary-subtle">
+          <div class="col-md-4 mx-2 border-end border-secondary-subtle">
             <h1>Kimim Ben ?</h1>
             <span class="line mb-5"></span>
             <h3 class="mb-4">Jr. Full-Stack Developer</h3>
@@ -119,7 +119,9 @@
           </div>
 
           <!--? Second col?-->
-          <div class="col mx-2 border-end border-secondary-subtle">
+          <div
+            class="col-md-4 offset-md mx-2 border-end border-secondary-subtle"
+          >
             <h1>Kişisel Bilgiler</h1>
             <span class="line mb-5"></span>
             <ul class="fw-lighter list-unstyled fs-4 mb-5">
@@ -162,7 +164,7 @@
           </div>
 
           <!--? Tird col?-->
-          <div class="col mx-2">
+          <div class="col-md mx-2">
             <h1>Kimim Ben ?</h1>
             <span class="line mb-5"></span>
             <h3 class="mb-4">Jr. Full-Stack Developer</h3>
@@ -181,270 +183,463 @@
       </div>
     </div>
 
-    <br /><br />
-
     <!--** My Cv **-->
-
-    <div class="container">
-      <h1 class="mt-5 mb-5 resume-title">
-        <span class="text">Benden</span> Bilgiler
-      </h1>
-      <!--? Boxes ?-->
-      <div class="row">
-        <div class="col">
-          <div class="row gx-4">
-            <!--? First row box ?-->
-            <div class="col">
-              <div class="mb-3 shadow">
-                <!-- title -->
-                <div class="fs-2 py-3 px-3">
-                  <i class="bi bi-mortarboard-fill"></i> Eğitim
+    <div class="border-bottom border-secondary-subtle">
+      <div class="container py-10">
+        <h1 class="mt-5 mb-5 resume-title">
+          <span class="text">Benden</span> Bilgiler
+        </h1>
+        <!--? Boxes ?-->
+        <div class="row">
+          <div class="col">
+            <div class="row gx-4">
+              <!--? First col box ?-->
+              <div class="col-lg-6">
+                <div class="mb-3 shadow">
+                  <!-- title -->
+                  <div class="fs-2 py-3 px-3">
+                    <i class="bi bi-mortarboard-fill"></i> Eğitim
+                  </div>
+                  <!-- line -->
+                  <span class="line w-100"></span>
+                  <!-- content -->
+                  <div class="card-body text-dark pyx-6">
+                    <img
+                      src="images/duzce-uni.png"
+                      class="card-img-top mb-4 w-25"
+                      alt="duzce universite logo"
+                    />
+                    <h6 class="title">
+                      <span class="text">2020 - 2022 /</span>
+                      Düzce Üniversitesi
+                    </h6>
+                    <h4 class="mb-4 mt-4">
+                      - Bilgisayar Programcılığı (3.26 / 4)
+                    </h4>
+                    <p class="fs-4 fw-lighter">
+                      Üniversiteden Teorik eğitim altyapısını ve kendime
+                      kattığım gelişim ile Ekim 2022 tarihinde başarılı bir
+                      şekilde mezun oldum.
+                    </p>
+                  </div>
                 </div>
-                <!-- line -->
-                <span class="line w-100"></span>
-                <!-- content -->
-                <div class="card-body text-dark pyx-6">
-                  <img
-                    src="images/duzce-uni.png"
-                    class="card-img-top mb-4 w-25"
-                    alt="duzce universite logo"
-                  />
-                  <h6 class="title">
-                    <span class="text">2020 - 2022 /</span>
-                    Düzce Üniversitesi
-                  </h6>
-                  <h4 class="mb-4 mt-4">
-                    - Bilgisayar Programcılığı (3.26 / 4)
-                  </h4>
-                  <p class="fs-4 fw-lighter">
-                    Üniversiteden Teorik eğitim altyapısını ve kendime kattığım
-                    gelişim ile Ekim 2022 tarihinde başarılı bir şekilde mezun
-                    oldum.
-                  </p>
+              </div>
+              <!--? Second col box ?-->
+              <div class="col-lg-6 offset-lg">
+                <div class="mb-3 shadow">
+                  <!-- title -->
+                  <div class="fs-2 py-3 px-3">
+                    <i class="bi bi-translate"></i> Diller
+                  </div>
+                  <!-- line -->
+                  <span class="line w-100"></span>
+                  <!-- content -->
+                  <div class="card-body text-dark pyx-6">
+                    <h6 class="title mt-4 mb-4">
+                      Türkçe <span class="text">- Anadil</span>
+                    </h6>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Danger striped example"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped bg-danger"
+                        style="width: 100%"
+                      ></div>
+                    </div>
+                    <h6 class="title mt-4 mb-4">
+                      İngilizce <span class="text">- B1 / B2</span>
+                    </h6>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Danger striped example"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped bg-danger"
+                        style="width: 60%"
+                      ></div>
+                    </div>
+                    <h6 class="title mt-4 mb-4">
+                      İşaret Dili <span class="text">- C1 / C2</span>
+                    </h6>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Danger striped example"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped bg-danger"
+                        style="width: 85%"
+                      ></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!--? Second row box ?-->
-            <div class="col">
-              <div class="mb-3 shadow">
-                <!-- title -->
-                <div class="fs-2 py-3 px-3">
-                  <i class="bi bi-translate"></i> Diller
-                </div>
-                <!-- line -->
-                <span class="line w-100"></span>
-                <!-- content -->
-                <div class="card-body text-dark pyx-6">
-                  <h6 class="title mt-4 mb-4">
-                    Türkçe <span class="text">- Anadil</span>
-                  </h6>
-                  <div
-                    class="progress"
-                    role="progressbar"
-                    aria-label="Danger striped example"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div
-                      class="progress-bar progress-bar-striped bg-danger"
-                      style="width: 100%"
-                    ></div>
+            <!--? Second row First box ?-->
+            <div class="mb-3 shadow">
+              <!-- title -->
+              <div class="fs-2 py-3 px-3">
+                <i class="bi bi-person-arms-up"></i> Hobiler
+              </div>
+              <!-- line -->
+              <span class="line w-100"></span>
+              <!-- content -->
+              <div class="card-body text-dark pyx-6">
+                <div class="row gx-5">
+                  <div class="col">
+                    <div class="p-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item fs-3">- Seyahat Etmek</li>
+                        <li class="list-group-item fs-3">- Kamp Yapmak</li>
+                        <li class="list-group-item fs-3">- Kitap Okumak</li>
+                        <li class="list-group-item fs-3">- Yüzmek</li>
+                      </ul>
+                    </div>
                   </div>
-                  <h6 class="title mt-4 mb-4">
-                    İngilizce <span class="text">- B1 / B2</span>
-                  </h6>
-                  <div
-                    class="progress"
-                    role="progressbar"
-                    aria-label="Danger striped example"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div
-                      class="progress-bar progress-bar-striped bg-danger"
-                      style="width: 60%"
-                    ></div>
-                  </div>
-                  <h6 class="title mt-4 mb-4">
-                    İşaret Dili <span class="text">- C1 / C2</span>
-                  </h6>
-                  <div
-                    class="progress"
-                    role="progressbar"
-                    aria-label="Danger striped example"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div
-                      class="progress-bar progress-bar-striped bg-danger"
-                      style="width: 85%"
-                    ></div>
+                  <div class="col">
+                    <div class="p-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item fs-3">- Futbol</li>
+                        <li class="list-group-item fs-3">- Voleybol</li>
+                        <li class="list-group-item fs-3">- Satranç</li>
+                        <li class="list-group-item fs-3">
+                          - Bilgisayar Oyunları
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--? Second row First box ?-->
-          <div class="mb-3 shadow">
-            <!-- title -->
-            <div class="fs-2 py-3 px-3">
-              <i class="bi bi-person-arms-up"></i> Hobiler
-            </div>
-            <!-- line -->
-            <span class="line w-100"></span>
-            <!-- content -->
-            <div class="card-body text-dark pyx-6">
-              <div class="row gx-5">
-                <div class="col">
-                  <div class="p-3">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item fs-3">- Seyahat Etmek</li>
-                      <li class="list-group-item fs-3">- Kamp Yapmak</li>
-                      <li class="list-group-item fs-3">- Kitap Okumak</li>
-                      <li class="list-group-item fs-3">- Yüzmek</li>
-                    </ul>
-                  </div>
+          <!--? Long box ?-->
+          <div class="col-lg-4 offset-lg">
+            <div class="shadow">
+              <!-- title -->
+              <div class="fs-2 py-3 px-3">
+                <i class="bi bi-laptop"></i> Beceriler
+              </div>
+              <!-- line -->
+              <span class="line w-100"></span>
+              <!-- content -->
+              <div class="card-body text-dark pyx-6">
+                <h6 class="title mt-4 mb-4">
+                  C #, Entity Framework, .NET Framework, Nesneye Yönelik
+                  Programlama (OOP), Katmanlı Mimari
+                </h6>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Danger striped example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-danger"
+                    style="width: 60%"
+                  ></div>
                 </div>
-                <div class="col">
-                  <div class="p-3">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item fs-3">- Futbol</li>
-                      <li class="list-group-item fs-3">- Voleybol</li>
-                      <li class="list-group-item fs-3">- Satranç</li>
-                      <li class="list-group-item fs-3">
-                        - Bilgisayar Oyunları
-                      </li>
-                    </ul>
-                  </div>
+                <h6 class="title mt-4 mb-4">ASP.NET ,MVC</h6>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Danger striped example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-danger"
+                    style="width: 60%"
+                  ></div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--? Long box ?-->
-        <div class="col-4">
-          <div class="mb-3 shadow">
-            <!-- title -->
-            <div class="fs-2 py-3 px-3">
-              <i class="bi bi-laptop"></i> Beceriler
-            </div>
-            <!-- line -->
-            <span class="line w-100"></span>
-            <!-- content -->
-            <div class="card-body text-dark pyx-6">
-              <h6 class="title mt-4 mb-4">
-                C #, Entity Framework, .NET Framework, Nesneye Yönelik
-                Programlama (OOP), Katmanlı Mimari
-              </h6>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Danger striped example"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
+                <h6 class="title mt-4 mb-4">HTML, CSS, Bootstrap</h6>
                 <div
-                  class="progress-bar progress-bar-striped bg-danger"
-                  style="width: 60%"
-                ></div>
-              </div>
-              <h6 class="title mt-4 mb-4">ASP.NET ,MVC</h6>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Danger striped example"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Danger striped example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-danger"
+                    style="width: 60%"
+                  ></div>
+                </div>
+                <h6 class="title mt-4 mb-4">Javascript</h6>
                 <div
-                  class="progress-bar progress-bar-striped bg-danger"
-                  style="width: 60%"
-                ></div>
-              </div>
-              <h6 class="title mt-4 mb-4">HTML, CSS, Bootstrap</h6>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Danger striped example"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Danger striped example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-danger"
+                    style="width: 60%"
+                  ></div>
+                </div>
+                <h6 class="title mt-4 mb-4">MSSQL</h6>
                 <div
-                  class="progress-bar progress-bar-striped bg-danger"
-                  style="width: 60%"
-                ></div>
-              </div>
-              <h6 class="title mt-4 mb-4">Javascript</h6>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Danger striped example"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Danger striped example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-danger"
+                    style="width: 60%"
+                  ></div>
+                </div>
+                <h6 class="title mt-4 mb-4">
+                  Adobe Photoshop, Adobe Illustrator
+                </h6>
                 <div
-                  class="progress-bar progress-bar-striped bg-danger"
-                  style="width: 60%"
-                ></div>
-              </div>
-              <h6 class="title mt-4 mb-4">MSSQL</h6>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Danger striped example"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Danger striped example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-danger"
+                    style="width: 60%"
+                  ></div>
+                </div>
+                <h6 class="title mt-4 mb-4">Microsoft Office Programları</h6>
                 <div
-                  class="progress-bar progress-bar-striped bg-danger"
-                  style="width: 60%"
-                ></div>
-              </div>
-              <h6 class="title mt-4 mb-4">
-                Adobe Photoshop, Adobe Illustrator
-              </h6>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Danger striped example"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped bg-danger"
-                  style="width: 60%"
-                ></div>
-              </div>
-              <h6 class="title mt-4 mb-4">Microsoft Office Programları</h6>
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Danger striped example"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  class="progress-bar progress-bar-striped bg-danger"
-                  style="width: 60%"
-                ></div>
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Danger striped example"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped bg-danger"
+                    style="width: 60%"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <br /><br />
+
+    <!--** Certificates **-->
+    <div class="border-bottom border-secondary-subtle">
+      <div class="container py-10">
+        <h1 class="mt-5 mb-5 resume-title">
+          <span class="text">Benden</span> Sertifikalar
+        </h1>
+        <div class="row">
+          <div class="col-xl-5 listscroll shadow-sm">
+            <div class="list-group fs-4 fw-medium" id="list-tab" role="tablist">
+              <a
+                class="list-group-item list-group-item-action active pyx-4"
+                id="list-home-list"
+                data-bs-toggle="list"
+                href="#list-home"
+                role="tab"
+                aria-controls="list-home"
+                >Build Responsive Real-World Websites with HTML and CSS
+              </a>
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-profile-list"
+                data-bs-toggle="list"
+                href="#list-profile"
+                role="tab"
+                aria-controls="list-profile"
+                >C# ile Algoritma ve Programlama 101-102</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-messages-list"
+                data-bs-toggle="list"
+                href="#list-messages"
+                role="tab"
+                aria-controls="list-messages"
+                >C# Form ile Görsel ve Nesne Tabanlı Programlama
+                101-201-301-401</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-settings"
+                role="tab"
+                aria-controls="list-settings"
+                >Uygulamalar Geliştirerek C# Eğitim Seti</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Asp.Net Core MVC 101</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+              <a
+                class="list-group-item list-group-item-action pyx-4"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-yeni"
+                role="tab"
+                aria-controls="list-settings"
+                >Loading..</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-7 offset-xl shadow-sm justify-content-center">
+            <div class="tab-content border" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="list-home"
+                role="tabpanel"
+                aria-labelledby="list-home-list"
+              >
+                <img
+                  src="images/certificates/html_css_responsiv.jpg"
+                  class="w-100"
+                />
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="list-profile"
+                role="tabpanel"
+                aria-labelledby="list-profile-list"
+              >
+                <img
+                  src="images/certificates/html_css_responsiv.jpg"
+                  class="w-100"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-messages"
+                role="tabpanel"
+                aria-labelledby="list-messages-list"
+              >
+                <img
+                  src="images/certificates/html_css_responsiv.jpg"
+                  class="w-100"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-settings"
+                role="tabpanel"
+                aria-labelledby="list-settings-list"
+              >
+                <img
+                  src="images/certificates/html_css_responsiv.jpg"
+                  class="w-100"
+                />
+              </div>
+              <div
+                class="tab-pane fade text-center"
+                id="list-yeni"
+                role="tabpanel"
+                aria-labelledby="list-settings-list"
+              >
+                <img
+                  src="images/certificates/html_css_responsiv.jpg"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
     <!--** Script files **-->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

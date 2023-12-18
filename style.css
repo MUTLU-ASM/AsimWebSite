@@ -74,7 +74,7 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 
 .nvbr ul li a {
   font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 550;
   color: #000 !important;
   transition: all 0.6s ease-in-out !important;
@@ -96,13 +96,15 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-
-.py-10 {
-  padding: 5rem;
+/******! Certificates ******/
+.listscroll {
+  height: calc(52rem + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+  overflow: hidden;
+  overflow-y: scroll;
 }
 /*! bunu çıkart !*/
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 700px) {
   .header-img {
     background-image: -webkit-linear-gradient(
         bottom,
@@ -122,5 +124,17 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   }
   .social-link {
     color: #fff !important;
+  }
+  .nvbr {
+    max-width: 60rem;
+    max-width: auto; /* Mobilde header'ın genişliğini otomatik belirle */
+  }
+  .border-end {
+    border-right: none !important;
+    border-bottom: solid 0.8px;
+    margin-bottom: 3rem !important;
+  }
+  .nvbr ul {
+    justify-content: center !important;
   }
 }
