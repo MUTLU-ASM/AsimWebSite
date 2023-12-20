@@ -156,6 +156,12 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   font-size: 1.5rem;
 }
 
+/******! Contact ******/
+iframe {
+  width: 100%;
+  height: 25rem;
+}
+
 /*! bunu çıkart !*/
 
 @media only screen and (max-width: 700px) {
