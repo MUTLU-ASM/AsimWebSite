@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Website</title>
+    <title>Asım Mutlu</title>
+    <link rel="icon" href="images/icons-person.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +15,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Lora:ital,wght@1,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Roboto:wght@300;400&family=Rubik:wght@400;500;600;700&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Gnrlstyle.css" />
   </head>
   <body>
     <!--** Header **-->
 
-    <header class="header-img">
+    <header id="Anasayfa" class="header-img">
       <!--? Social icons ?-->
       <div class="container">
         <ul class="social-icons">
@@ -60,18 +67,21 @@
       <div class="container text-center py-4">
         <div class="row">
           <!--? First Links?-->
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <ul class="nav">
               <li class="nav-item mx-4">
-                <a class="text-dark-emphasis" aria-current="page" href="#"
+                <a
+                  class="text-dark-emphasis"
+                  aria-current="page"
+                  href="#Anasayfa"
                   >Anasayfa</a
                 >
               </li>
               <li class="nav-item mx-4">
-                <a class="text-dark-emphasis" href="#">Hakkımda</a>
+                <a class="text-dark-emphasis" href="#Hakkimda">Hakkımda</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="text-dark-emphasis" href="#">Bilgiler</a>
+                <a class="text-dark-emphasis" href="#Bilgiler">Bilgiler</a>
               </li>
             </ul>
           </div>
@@ -80,16 +90,18 @@
             <img src="images/nav-avatar.jpg" alt="" />
           </div>
           <!--? Second Links?-->
-          <div class="col-lg-4 offset-lg">
+          <div class="col-md-4 offset-md">
             <ul class="nav justify-content-end">
               <li class="nav-item mx-4">
-                <a class="text-dark-emphasis" href="#">Çalışmalar</a>
+                <a class="text-dark-emphasis" href="#Calismalar">Çalışmalar</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="text-dark-emphasis" href="#">Sertifikalar</a>
+                <a class="text-dark-emphasis" href="#Sertifikalar"
+                  >Sertifikalar</a
+                >
               </li>
               <li class="nav-item mx-4">
-                <a class="text-dark-emphasis" href="#">İletişim</a>
+                <a class="text-dark-emphasis" href="#Iletisim">İletişim</a>
               </li>
             </ul>
           </div>
@@ -99,7 +111,7 @@
 
     <!--** About **-->
 
-    <div class="border-bottom border-secondary-subtle">
+    <div id="Hakkimda" class="border-bottom border-secondary-subtle">
       <div class="container py-10">
         <div class="row">
           <!--? First col?-->
@@ -107,7 +119,7 @@
             <h1>Kimim Ben ?</h1>
             <span class="line mb-5"></span>
             <h3 class="mb-4">Jr. Full-Stack Developer</h3>
-            <p class="fs-4 fw-lighter">
+            <p class="fs-4 text-content">
               Tam yığın geliştirici olarak çalışırken. Kodların arasında
               gezinirken aynı zamanda projelerime ve gelişimime odaklanıyorum.
               Teknoloji dünyasında kendimi sürekli güncel tutmayı seviyor, işime
@@ -126,18 +138,22 @@
           >
             <h1>Kişisel Bilgiler</h1>
             <span class="line mb-5"></span>
-            <ul class="fw-lighter list-unstyled fs-4 mb-5">
+            <ul class="list-unstyled fs-4 mb-5">
               <li class="mb-2">
-                <span class="fw-medium">Doğum Tarihi</span> : 22/05/2001
+                <span class="fw-bold">Doğum Tarihi</span
+                ><span class="text-content"> : 22/05/2001</span>
               </li>
               <li class="mb-2">
-                <span class="fw-medium">Mail</span> : asimmutlu6134@gmail.com
+                <span class="fw-bold">Mail</span>
+                <span class="text-content"> : asimmutlu6134@gmail.com</span>
               </li>
               <li class="mb-2">
-                <span class="fw-medium">Telefon</span> : +90 (537) 730 54 77
+                <span class="fw-bold">Telefon</span
+                ><span class="text-content"> : +90 (537) 730 54 77</span>
               </li>
               <li class="mb-2">
-                <span class="fw-medium">Adres</span> : Türkiye/İstanbul/Kartal
+                <span class="fw-bold">Adres</span
+                ><span class="text-content"> : Türkiye/İstanbul/Kartal</span>
               </li>
             </ul>
 
@@ -170,12 +186,12 @@
             <h1>Kimim Ben ?</h1>
             <span class="line mb-5"></span>
             <h3 class="mb-4">Jr. Full-Stack Developer</h3>
-            <p class="fs-4 fw-lighter">
+            <p class="fs-4 text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse
               distinctio vitae ducimus expedita soluta doloribus numquam
               voluptatem iste tempora!
             </p>
-            <p class="fs-4 fw-lighter">
+            <p class="fs-4 text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse
               distinctio vitae ducimus expedita soluta doloribus numquam
               voluptatem iste tempora!
@@ -187,7 +203,7 @@
 
     <!--** My Cv **-->
 
-    <div class="border-bottom border-secondary-subtle">
+    <div id="Bilgiler" class="border-bottom border-secondary-subtle">
       <div class="container py-10">
         <h1 class="mt-5 mb-5 resume-title">
           <span class="text">Benden</span> Bilgiler
@@ -200,7 +216,7 @@
               <div class="col-lg-6">
                 <div class="mb-3 shadow">
                   <!-- title -->
-                  <div class="fs-2 py-3 px-3">
+                  <div class="fs-2 py-3 px-3 fw-medium">
                     <i class="bi bi-mortarboard-fill"></i> Eğitim
                   </div>
                   <!-- line -->
@@ -219,7 +235,7 @@
                     <h4 class="mb-4 mt-4">
                       - Bilgisayar Programcılığı (3.26 / 4)
                     </h4>
-                    <p class="fs-4 fw-lighter">
+                    <p class="fs-4 text-content">
                       Üniversiteden Teorik eğitim altyapısını ve kendime
                       kattığım gelişim ile Ekim 2022 tarihinde başarılı bir
                       şekilde mezun oldum.
@@ -231,7 +247,7 @@
               <div class="col-lg-6 offset-lg">
                 <div class="mb-3 shadow">
                   <!-- title -->
-                  <div class="fs-2 py-3 px-3">
+                  <div class="fs-2 py-3 px-3 fw-medium">
                     <i class="bi bi-translate"></i> Diller
                   </div>
                   <!-- line -->
@@ -293,7 +309,7 @@
             <!--? Second row First box ?-->
             <div class="mb-3 shadow">
               <!-- title -->
-              <div class="fs-2 py-3 px-3">
+              <div class="fs-2 py-3 px-3 fw-medium">
                 <i class="bi bi-person-arms-up"></i> Hobiler
               </div>
               <!-- line -->
@@ -304,21 +320,27 @@
                   <div class="col">
                     <div class="p-3">
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item fs-3">- Seyahat Etmek</li>
-                        <li class="list-group-item fs-3">- Kamp Yapmak</li>
-                        <li class="list-group-item fs-3">- Kitap Okumak</li>
-                        <li class="list-group-item fs-3">- Yüzmek</li>
+                        <li class="list-group-item fs-3">
+                          &#10551; Seyahat Etmek
+                        </li>
+                        <li class="list-group-item fs-3">
+                          &#10551; Kamp Yapmak
+                        </li>
+                        <li class="list-group-item fs-3">
+                          &#10551; Kitap Okumak
+                        </li>
+                        <li class="list-group-item fs-3">&#10551; Yüzmek</li>
                       </ul>
                     </div>
                   </div>
                   <div class="col">
                     <div class="p-3">
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item fs-3">- Futbol</li>
-                        <li class="list-group-item fs-3">- Voleybol</li>
-                        <li class="list-group-item fs-3">- Satranç</li>
+                        <li class="list-group-item fs-3">&#10551; Futbol</li>
+                        <li class="list-group-item fs-3">&#10551; Voleybol</li>
+                        <li class="list-group-item fs-3">&#10551; Satranç</li>
                         <li class="list-group-item fs-3">
-                          - Bilgisayar Oyunları
+                          &#10551; Bilgisayar Oyunları
                         </li>
                       </ul>
                     </div>
@@ -331,13 +353,13 @@
           <div class="col-lg-4 offset-lg">
             <div class="shadow">
               <!-- title -->
-              <div class="fs-2 py-3 px-3">
+              <div class="fs-2 py-3 px-3 fw-medium">
                 <i class="bi bi-laptop"></i> Beceriler
               </div>
               <!-- line -->
               <span class="line w-100"></span>
               <!-- content -->
-              <div class="card-body text-dark pyx-6">
+              <div class="card-body text-dark pyx-6 text-talent">
                 <h6 class="title mt-4 mb-4">
                   C #, Entity Framework, .NET Framework, Nesneye Yönelik
                   Programlama (OOP), Katmanlı Mimari
@@ -450,12 +472,21 @@
 
     <!--** Project **-->
 
-    <div class="border-bottom border-secondary-subtle">
+    <div id="Calismalar" class="border-bottom border-secondary-subtle">
       <div class="container py-10">
         <h1 class="mt-5 mb-5 resume-title">
           <span class="text">Benden</span> Projeler
         </h1>
         <section class="cards-container text-dark">
+          <div class="position-relative p-4">
+            <img
+              width="30"
+              height="30"
+              class="position-absolute top-50 start-0 translate-middle-y left"
+              src="https://img.icons8.com/ios-glyphs/30/less-than.png"
+              alt="less-than"
+            />
+          </div>
           <!-- Card-1 -->
           <div class="cards">
             <div class="card-size card-top">
@@ -476,7 +507,7 @@
                   type="button"
                   class="btn btn-outline-danger btn-lg fs-3"
                 >
-                  Light
+                  Daha fazla bilgi
                 </button>
               </div>
             </div>
@@ -501,7 +532,7 @@
                   type="button"
                   class="btn btn-outline-danger btn-lg fs-3"
                 >
-                  Light
+                  Daha fazla bilgi
                 </button>
               </div>
             </div>
@@ -526,7 +557,7 @@
                   type="button"
                   class="btn btn-outline-danger btn-lg fs-3"
                 >
-                  Light
+                  Daha fazla bilgi
                 </button>
               </div>
             </div>
@@ -551,10 +582,19 @@
                   type="button"
                   class="btn btn-outline-danger btn-lg fs-3"
                 >
-                  Light
+                  Daha fazla bilgi
                 </button>
               </div>
             </div>
+          </div>
+          <div class="position-relative p-4">
+            <img
+              width="30"
+              height="30"
+              class="position-absolute top-50 start-0 translate-middle-y right"
+              src="https://img.icons8.com/ios-glyphs/30/chevron-right.png"
+              alt="less-than"
+            />
           </div>
         </section>
       </div>
@@ -562,7 +602,7 @@
 
     <!--** Certificates **-->
 
-    <div class="border-bottom border-secondary-subtle">
+    <div id="Sertifikalar" class="border-bottom border-secondary-subtle">
       <div class="container py-10">
         <h1 class="mt-5 mb-5 resume-title">
           <span class="text">Benden</span> Sertifikalar
@@ -756,25 +796,50 @@
 
     <!--** Contact **-->
 
-    <div class="border-bottom border-secondary-subtle">
+    <div id="Iletisim" class="border-bottom border-secondary-subtle">
       <div class="container py-10">
+        <h1 class="mt-5 mb-5 resume-title">
+          <span class="text">İletişime</span> Geç
+        </h1>
         <div class="row">
-          <div class="col-8 border rounded">
-            <div class="pyx-8">
+          <div class="col-md-8 border rounded">
+            <div class="pyx-6">
               <!-- Name and surname text -->
-              <div class="row fs-2 mb-5">
+              <div class="row fs-2">
                 <div class="col-md-6">
-                  <label class="form-label">Adınız</label>
+                  <label class="form-label"
+                    ><img
+                      width="30"
+                      height="28"
+                      src="https://img.icons8.com/sf-regular/48/FA5252/collaborator-male.png"
+                      alt="collaborator-male"
+                    />Adınız</label
+                  >
                   <input type="text" class="form-control fs-3 border-2" />
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label">Soyadınız</label>
+                  <label class="form-label">
+                    <img
+                      width="30"
+                      height="28"
+                      src="https://img.icons8.com/sf-regular/48/FA5252/collaborator-male.png"
+                      alt="collaborator-male"
+                    />Soyadınız</label
+                  >
                   <input type="text" class="form-control fs-3 border-2" />
                 </div>
               </div>
               <!-- Email text -->
-              <div class="col-md-12 fs-2 mb-5">
-                <label for="inputEmail4" class="form-label">Email</label>
+              <div class="col-md-12 fs-2 mb-5 mt-5">
+                <label for="inputEmail4" class="form-label"
+                  ><img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios-filled/50/FA5252/email.png"
+                    alt="email"
+                  />
+                  Email</label
+                >
                 <input
                   type="email"
                   class="form-control fs-3 border-2"
@@ -782,9 +847,15 @@
                 />
               </div>
               <!-- Explain textarea -->
-              <div class="mb-3 fs-2">
+              <div class="fs-2">
                 <label for="exampleFormControlTextarea1" class="form-label"
-                  >Açıklama</label
+                  ><img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios/50/FA5252/autograph.png"
+                    alt="autograph"
+                  />
+                  Açıklama</label
                 >
                 <textarea
                   class="form-control fs-3 border-2"
@@ -792,11 +863,14 @@
                   rows="6"
                 ></textarea>
               </div>
+              <button type="button" class="btn btn-danger mt-3 fs-3">
+                Gönder
+              </button>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md offset-md">
             <!-- Contact -->
-            <div class="col border mb-4 bg-danger pyx-7">
+            <div class="col border mb-4 bg-danger pyx-7 rounded">
               <div class="fs-2 text-light mb-5">
                 <h1>Contact</h1>
                 <span class="line-light"></span>
@@ -819,7 +893,8 @@
             <!-- Map -->
             <div class="col">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48236.41098061096!2d29.1555442883306!3d40.92066397528509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac4f1dd92e915%3A0x7bf91a7dd7b26dcc!2sKartal%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1703079346529!5m2!1str!2str"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d272357.5539311148!2d28.984651348883997!3d41.043755339822546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1703172280342!5m2!1str!2str"
+                style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -830,6 +905,37 @@
       </div>
     </div>
 
+    <!--** Footer **-->
+    <footer class="border-bottom border-secondary-subtle bg-danger">
+      <div class="container py-10">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <div class="fs-2 text-light mb-5">
+              <h1>Sayfa</h1>
+              <span class="line-light"></span>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="fs-2 text-light mb-5">
+              <h1>Contact</h1>
+              <span class="line-light"></span>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="fs-2 text-light mb-5">
+              <h1>Contact</h1>
+              <span class="line-light"></span>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="fs-2 text-light mb-5">
+              <h1>Takip Et!</h1>
+              <span class="line-light"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--** Script files **-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

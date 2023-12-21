@@ -70,6 +70,10 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 .nvbr {
   font-size: 1.8rem;
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
+  /* position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.97); */
 }
 
 .nvbr ul li a {
@@ -107,8 +111,12 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 /******! Projects ******/
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   column-gap: 1.2rem;
+}
+.left,
+.right {
+  cursor: pointer;
 }
 .cards {
   cursor: pointer;
@@ -129,7 +137,7 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 }
 
 .cards:hover .card-top {
-  background: #666565;
+  background: transparent;
   transform: translateY(0);
 }
 .cards .card-bottom {
@@ -161,9 +169,15 @@ iframe {
   width: 100%;
   height: 25rem;
 }
-
+.list-group-item {
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+}
 /*! bunu çıkart !*/
-
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
 @media only screen and (max-width: 700px) {
   .header-img {
     background-image: -webkit-linear-gradient(

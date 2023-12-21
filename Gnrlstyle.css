@@ -65,8 +65,19 @@ html {
 }
 /******! Font settings ******/
 .title {
-  font-size: calc(12px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+  font-family: "Archivo", sans-serif;
+  font-size: calc(1.15rem + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+  font-weight: 700;
+  letter-spacing: 0.08rem;
 }
 .text {
   color: #f85c70 !important;
+}
+.bg-pink-danger {
+  background-color: #f62b45;
+}
+.text-content {
+  font-family: "Archivo", sans-serif;
+  font-family: "Lora", serif;
+  letter-spacing: 0.05rem;
 }
