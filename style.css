@@ -178,7 +178,7 @@ iframe {
   padding: 12.8rem 0;
   border-top: 1px solid #eee;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 780px) {
   .header-img {
     background-image: -webkit-linear-gradient(
         bottom,
@@ -211,6 +211,11 @@ iframe {
   .nvbr ul {
     justify-content: center !important;
   }
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 870px) {
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
   }
