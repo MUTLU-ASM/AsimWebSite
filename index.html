@@ -15,6 +15,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,30 +33,42 @@
     <!--** Header **-->
 
     <header id="Anasayfa" class="header-img">
-      <!--? Social icons ?-->
+      <!--? Social icons and Dark Mode ?-->
       <div class="container">
-        <ul class="social-icons">
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="bi bi-facebook" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="bi bi-twitter-x" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="bi bi-instagram" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="bi bi-github" aria-hidden="true"></i
-            ></a>
-          </li>
-        </ul>
+        <div class="d-flex mb-3">
+          <div class="pt-3">
+            <ul class="social-icons">
+              <li class="social-item">
+                <a class="social-link" href="#"
+                  ><i class="bi bi-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="#"
+                  ><i class="bi bi-twitter-x" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="#"
+                  ><i class="bi bi-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="#"
+                  ><i class="bi bi-github" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="ms-auto pt-3">
+            <i
+              id="darkMode"
+              style="cursor: pointer"
+              onclick="BtnDarkMode()"
+              class="fs-1 bi bi-sun"
+            ></i>
+          </div>
+        </div>
       </div>
       <!--? Content ?-->
       <div class="container header-content">
@@ -63,7 +80,7 @@
 
     <!--** Navbar **-->
 
-    <div class="nvbr">
+    <div id="Navbar" class="nvbr">
       <div class="container text-center py-4">
         <div class="row">
           <!--? First Links?-->
@@ -87,7 +104,11 @@
           </div>
           <!--? Profile avatar ?-->
           <div class="col d-none d-md-block">
-            <img src="images/nav-avatar.jpg" alt="" />
+            <img id="navProfile" src="images/nav-avatar.jpg" alt="" />
+            <div class="fs-5 navProfileText">
+              <h5>Asım Mutlu</h5>
+              <div>Full-Stack | Developer</div>
+            </div>
           </div>
           <!--? Second Links?-->
           <div class="col-md-4 offset-md">
@@ -138,24 +159,18 @@
           >
             <h1>Kişisel Bilgiler</h1>
             <span class="line mb-5"></span>
-            <ul class="list-unstyled fs-4 mb-5">
-              <li class="mb-2">
-                <span class="fw-bold">Doğum Tarihi</span
-                ><span class="text-content"> : 22/05/2001</span>
-              </li>
-              <li class="mb-2">
-                <span class="fw-bold">Mail</span>
-                <span class="text-content"> : asimmutlu6134@gmail.com</span>
-              </li>
-              <li class="mb-2">
-                <span class="fw-bold">Telefon</span
-                ><span class="text-content"> : +90 (537) 730 54 77</span>
-              </li>
-              <li class="mb-2">
-                <span class="fw-bold">Adres</span
-                ><span class="text-content"> : Türkiye/İstanbul/Kartal</span>
-              </li>
-            </ul>
+            <div class="fs-4 text-content pyx-6">
+              <p><span class="fw-medium">Doğum Tarihi</span> : 22/05/2001</p>
+              <p>
+                <span class="fw-medium">Mail</span> : asimmutlu6134@gmail.com
+              </p>
+              <p>
+                <span class="fw-medium">Telefon</span> : +90 (537) 730 54 77
+              </p>
+              <p>
+                <span class="fw-medium">Adres</span> : Türkiye/İstanbul/Kartal
+              </p>
+            </div>
 
             <ul class="fs-1 hstack gap-5 list-unstyled mx-auto">
               <li class="social-item">
@@ -471,7 +486,167 @@
     </div>
 
     <!--** Project **-->
+    <div id="Calismalar" class="border-bottom border-secondary-subtle">
+      <div class="container py-10">
+        <h1 class="mt-5 mb-5 resume-title">
+          <span class="text">Benden</span> Projeler
+        </h1>
 
+        <div class="swiper mobile">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="cards">
+                  <div class="card-size card-top">
+                    <div class="contents">
+                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <h3>PROJE -1</h3>
+                    </div>
+                  </div>
+                  <div class="card-size card-bottom">
+                    <div class="contents fs-4">
+                      <p>
+                        Hypertext Markup Language (HTML) is the standard markup
+                        language for documents designed to be displayed in a web
+                        browser.be displayed in a web browser.be displayed in a
+                        web browser.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger btn-lg fs-3"
+                      >
+                        Daha fazla bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="cards">
+                  <div class="card-size card-top">
+                    <div class="contents">
+                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <h3>PROJE - 2</h3>
+                    </div>
+                  </div>
+                  <div class="card-size card-bottom">
+                    <div class="contents fs-4">
+                      <p>
+                        Hypertext Markup Language (HTML) is the standard markup
+                        language for documents designed to be displayed in a web
+                        browser.be displayed in a web browser.be displayed in a
+                        web browser.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger btn-lg fs-3"
+                      >
+                        Daha fazla bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="cards">
+                  <div class="card-size card-top">
+                    <div class="contents">
+                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <h3>PROJE - 3</h3>
+                    </div>
+                  </div>
+                  <div class="card-size card-bottom">
+                    <div class="contents fs-4">
+                      <p>
+                        Hypertext Markup Language (HTML) is the standard markup
+                        language for documents designed to be displayed in a web
+                        browser.be displayed in a web browser.be displayed in a
+                        web browser.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger btn-lg fs-3"
+                      >
+                        Daha fazla bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="cards">
+                  <div class="card-size card-top">
+                    <div class="contents">
+                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <h3>PROJE - 4</h3>
+                    </div>
+                  </div>
+                  <div class="card-size card-bottom">
+                    <div class="contents fs-4">
+                      <p>
+                        Hypertext Markup Language (HTML) is the standard markup
+                        language for documents designed to be displayed in a web
+                        browser.be displayed in a web browser.be displayed in a
+                        web browser.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger btn-lg fs-3"
+                      >
+                        Daha fazla bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="cards">
+                  <div class="card-size card-top">
+                    <div class="contents">
+                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <h3>PROJE - 5</h3>
+                    </div>
+                  </div>
+                  <div class="card-size card-bottom">
+                    <div class="contents fs-4">
+                      <p>
+                        Hypertext Markup Language (HTML) is the standard markup
+                        language for documents designed to be displayed in a web
+                        browser.be displayed in a web browser.be displayed in a
+                        web browser.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger btn-lg fs-3"
+                      >
+                        Daha fazla bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev text-light fw-bolder"></div>
+          <div class="swiper-button-next text-light fw-bolder"></div>
+        </div>
+      </div>
+    </div>
     <!--** Certificates **-->
 
     <div id="Sertifikalar" class="border-bottom border-secondary-subtle">
@@ -479,9 +654,9 @@
         <h1 class="mt-5 mb-5 resume-title">
           <span class="text">Benden</span> Sertifikalar
         </h1>
-        <div class="row fst-italic fst-italic">
-          <div class="col-xl-5 listscroll shadow-sm">
-            <div class="list-group fs-4 fw-medium" id="list-tab" role="tablist">
+        <div class="row">
+          <div class="col-xl-5 listscroll">
+            <div class="list-group fs-5" id="list-tab" role="tablist">
               <a
                 class="list-group-item list-group-item-action active pyx-4"
                 id="list-home-list"
@@ -602,8 +777,8 @@
               >
             </div>
           </div>
-          <div class="col-xl-7 offset-xl shadow-sm justify-content-center">
-            <div class="tab-content border" id="nav-tabContent">
+          <div class="col-xl-7 offset-xl justify-content-center">
+            <div class="tab-content" id="nav-tabContent">
               <div
                 class="tab-pane fade show active"
                 id="list-home"
@@ -866,5 +1041,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

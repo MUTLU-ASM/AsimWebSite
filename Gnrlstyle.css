@@ -77,7 +77,6 @@ html {
   background-color: #f62b45;
 }
 .text-content {
-  font-family: "Archivo", sans-serif;
-  font-family: "Lora", serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.05rem;
 }

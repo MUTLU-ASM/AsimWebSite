@@ -4,14 +4,16 @@
   list-style-type: none;
   display: flex;
   gap: 2rem;
-  padding: 1rem 0 0 8rem;
   font-size: 1.8rem;
+}
+.social-item a {
+  color: #eee;
 }
 .social-item {
   transition: transform 0.7s;
 }
 .social-item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /******! Header ******/
@@ -70,10 +72,10 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 .nvbr {
   font-size: 1.8rem;
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
-  /* position: sticky;
+  position: sticky;
   top: 0;
   z-index: 9999;
-  background: rgba(255, 255, 255, 0.97); */
+  background: rgba(255, 255, 255, 0.97);
 }
 
 .nvbr ul li a {
@@ -100,6 +102,11 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+/******! About ******/
+#Hakkimda ul {
+  justify-items: center;
+}
+
 /******! Certificates ******/
 
 .listscroll {
@@ -107,12 +114,16 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   overflow: hidden;
   overflow-y: scroll;
 }
+#Sertifikalar .active {
+  background-color: #f62b45 !important;
+  border: none !important;
+}
 
 /******! Projects ******/
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 1.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
 }
 .left,
 .right {
@@ -147,7 +158,7 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   padding: 2rem;
   background: #fff;
   box-sizing: border-box;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.35);
+  /* box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); */
   transform: translateY(-10rem);
 }
 
@@ -164,6 +175,15 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   font-size: 1.5rem;
 }
 
+.swiper {
+  width: 100% !important;
+  max-width: 1280px !important;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /******! Contact ******/
 iframe {
   width: 100%;
