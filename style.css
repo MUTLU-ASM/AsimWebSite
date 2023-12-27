@@ -193,11 +193,11 @@ iframe {
   font-size: 1.8rem !important;
   font-weight: 500 !important;
 }
-/*! bunu çıkart !*/
-.footer {
-  padding: 12.8rem 0;
-  border-top: 1px solid #eee;
+/******! Footer ******/
+footer ul a:hover {
+  color: #000 !important;
 }
+/******! Yeni dosyaya atanacak ******/
 @media only screen and (max-width: 780px) {
   .header-img {
     background-image: -webkit-linear-gradient(

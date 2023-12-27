@@ -54,7 +54,7 @@ function BtnDarkMode() {
   // `dark` tema sınıfını ekleyip/çıkar
   bodyElement.classList.toggle("dark-theme");
 
-  // Eğer `dark-theme` sınıfı varsa, data-bs-theme özelliğini ekleyin, aksi takdirde kaldırın
+  // Eğer `dark-theme` sınıfı varsa, data-bs-theme özelliğini ekleyin, aksi takdirde kaldırın.
   if (bodyElement.classList.contains("dark-theme")) {
     bodyElement.setAttribute("data-bs-theme", "dark");
     navbar.style.background = "rgb(33, 37, 41,0.97)";
