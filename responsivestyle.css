@@ -1,0 +1,64 @@
+@media only screen and (max-width: 780px) {
+  .header-img {
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(images/home-avatar2.jpg);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6)
+      ),
+      url(images/home-avatar2.jpg);
+    height: 85vh;
+    min-height: 60rem;
+    min-width: 60rem;
+    width: auto; /* Mobilde header'ın genişliğini otomatik belirle */
+  }
+  .social-link {
+    color: #fff !important;
+  }
+  .nvbr {
+    max-width: 60rem;
+    max-width: auto; /* Mobilde header'ın genişliğini otomatik belirle */
+  }
+  .border-end:first-child {
+    padding-bottom: 3rem !important;
+  }
+  .border-end {
+    border-right: none !important;
+    border-bottom: solid 0.8px;
+    margin-bottom: 3rem !important;
+  }
+  .nvbr ul {
+    justify-content: center !important;
+  }
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 870px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #Calismalar .mobile {
+    padding-left: 11rem;
+  }
+  #Iletisim .offset-md {
+    padding-top: 3rem !important;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #Iletisim .offset-md {
+    padding-top: 3rem !important;
+  }
+  #Iletisim .row div:first-child {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 625px) {
+  body {
+    width: 65rem; /* Mobilde header'ın genişliğini otomatik belirle */
+  }
+}
