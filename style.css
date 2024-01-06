@@ -74,7 +74,7 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 100;
   background: rgba(255, 255, 255, 0.97);
 }
 
@@ -109,11 +109,6 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 
 /******! Certificates ******/
 
-.listscroll {
-  height: calc(52rem + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
-  overflow: hidden;
-  overflow-y: scroll;
-}
 #Sertifikalar .active {
   background-color: #f62b45 !important;
   border: none !important;

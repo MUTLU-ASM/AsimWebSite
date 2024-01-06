@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -503,7 +504,7 @@
                 <div class="cards">
                   <div class="card-size card-top">
                     <div class="contents">
-                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <img src="images/software-engineer-icon.png" alt="html" />
                       <h3>PROJE -1</h3>
                     </div>
                   </div>
@@ -516,6 +517,7 @@
                         web browser.
                       </p>
                       <button
+                        id="btnOpen"
                         type="button"
                         class="btn btn-outline-danger btn-lg fs-3"
                       >
@@ -531,7 +533,7 @@
                 <div class="cards">
                   <div class="card-size card-top">
                     <div class="contents">
-                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <img src="images/software-engineer-icon.png" alt="html" />
                       <h3>PROJE - 2</h3>
                     </div>
                   </div>
@@ -559,7 +561,7 @@
                 <div class="cards">
                   <div class="card-size card-top">
                     <div class="contents">
-                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <img src="images/software-engineer-icon.png" alt="html" />
                       <h3>PROJE - 3</h3>
                     </div>
                   </div>
@@ -587,7 +589,7 @@
                 <div class="cards">
                   <div class="card-size card-top">
                     <div class="contents">
-                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <img src="images/software-engineer-icon.png" alt="html" />
                       <h3>PROJE - 4</h3>
                     </div>
                   </div>
@@ -615,7 +617,7 @@
                 <div class="cards">
                   <div class="card-size card-top">
                     <div class="contents">
-                      <img src="https://i.imgur.com/52er9UX.png" alt="html" />
+                      <img src="images/software-engineer-icon.png" alt="html" />
                       <h3>PROJE - 5</h3>
                     </div>
                   </div>
@@ -876,7 +878,10 @@
                 role="tabpanel"
                 aria-labelledby="list-settings-list"
               >
-                <img src="images/certificates/UDEMY-C#.jpg" class="w-100" />
+                <img
+                  src="images/certificates/uygulamalarlagelistirerekcsharp.jpg"
+                  class="w-100"
+                />
               </div>
               <div
                 class="tab-pane fade text-center"
@@ -912,7 +917,7 @@
                 aria-labelledby="list-settings-list"
               >
                 <img
-                  src="images/certificates/WordPress_Kullanarak_Web_Sitesi_Hazırlama-Sertifika_213175.jpg"
+                  src="images/certificates/WordPressKullanarakWebSitesiHazırlamaSertifika.jpg"
                   class="w-100"
                 />
               </div>
@@ -1013,7 +1018,11 @@
                   rows="6"
                 ></textarea>
               </div>
-              <button type="button" class="btn btn-danger mt-3 fs-3">
+              <button
+                type="button"
+                id="btnGonder"
+                class="btn btn-danger mt-3 fs-3"
+              >
                 Gönder
               </button>
             </div>
@@ -1056,41 +1065,6 @@
     </div>
 
     <!--** Footer **-->
-
-    <!-- <footer class="border-bottom border-secondary-subtle bg-danger">
-      <div class="container py-10">
-        <div class="row align-items-center">
-          <div class="col-sm">
-            <div class="fs-2 text-light mb-5">
-              <h1>Sayfa</h1>
-              <span class="line-light mb-5"></span>
-              <p>Anasayfa</p>
-              <p>Anasayfa</p>
-              <p>Anasayfa</p>
-              <p>Anasayfa</p>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="fs-2 text-light mb-5">
-              <h1>Contact</h1>
-              <span class="line-light"></span>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="fs-2 text-light mb-5">
-              <h1>Contact</h1>
-              <span class="line-light"></span>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="fs-2 text-light mb-5">
-              <h1>Takip Et!</h1>
-              <span class="line-light"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>-->
     <div class="bg-danger">
       <div class="container py-4">
         <footer class="py-3 my-4 fs-3">
@@ -1139,8 +1113,98 @@
       </div>
     </div>
 
-    <!--** Script files **-->
+    <!--** Projects Modal **-->
+    <div id="modalEl">
+      <div class="container">
+        <div class="col-md fs-3">
+          <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <h3>Proje</h3>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">Tanım</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2"
+                  >Genel Özellikleri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Teknik Altyapı</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bg-body-tertiary p-3 rounded-2 listscroll-1">
+            <h4 id="scrollspyHeading1">Tanım</h4>
+            <p>
+              Bu proje; Sinemalar tarafından kullanılması planlanan yazılım
+              ihtiyacı doğrultusunda hazırlanmış olup, Müşterilerin kolaylıkla
+              her işlemi yapabildiği ve kendileri tarafından film, bilet,
+              yiyecek, içecek işlemlerini ve üzerinde satın alabilecekleri bir
+              yazılım
+            </p>
+            <h4 id="scrollspyHeading2">Genel Özellikleri</h4>
+            <p>
+              Müşteriden herhangi bir giriş bilgisi istemeksizin ve sadece
+              müşteri odaklı olup kendi işlemlerini gerçekleştirebileceği geniş
+              kapsamlı bir uygulamadır. Bu uygulamada müşteriler tarafından
+              yapılmış olan işlemleri tutan yönetici; verilerin görüntülendiği
+              ve üzerinde güncelleme, silme, ekleme, kaydetme ve filmlerin;
+              vizyon güncelliği, afiş düzeni, kategori ayarı, salon (saat)
+              ayarına erişme yetkisine sahiptir. Yapılan yazılımın Ara yüzünde
+              Başlangıç, Tanıtım, Film Seçim, Bilet işlemleri, Yiyecek-İçecek,
+              Makbuz, Yönetici giriş, Yönetici paneli ekranları bulunmaktadır.
+            </p>
+            <h4 id="scrollspyHeading1">Teknik Altyapı</h4>
+            <p>
+              Programlama dili C# kullanıldı. Yazılım veri tabanı Microsoft SQL
+              kullanıldı. Açıklamalı yorum satırları eklendi. Yazılımın veri
+              tabanı ilişkisel veri tabanı mimarisine uygun olarak tasarlandı.
+            </p>
+            <div class="gallery pyx-7">
+              <figure class="gallery-item">
+                <img
+                  src="images/home-avatar2.jpg"
+                  alt="Photo of beautifully
+                arranged food"
+                />
+                <!-- <figcaption>Caption</figcaption> -->
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/home-avatar2.jpg"
+                  alt="Photo of beautifully
+                arranged food"
+                />
+                <!-- <figcaption>Caption</figcaption> -->
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/home-avatar2.jpg"
+                  alt="Photo of beautifully
+                arranged food"
+                />
+                <!-- <figcaption>Caption</figcaption> -->
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/home-avatar2.jpg"
+                  alt="Photo of beautifully
+                arranged food"
+                />
+                <!-- <figcaption>Caption</figcaption> -->
+              </figure>
+            </div>
+          </div>
+        </div>
 
+        <button id="btnClose" class="btn btn-danger fs-3 mt-3">Kapat</button>
+        <a class="btn btn-danger fs-3 mt-3" href="https://github.com/MUTLU-ASM">
+          Daha fazla bilgi
+        </a>
+      </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <!--** Script files **-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

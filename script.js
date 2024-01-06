@@ -1,3 +1,4 @@
+/* Image scroll */
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
@@ -30,11 +31,12 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+/* Navbar Photo */
+
 window.addEventListener("scroll", function () {
   var navProfile = document.getElementById("navProfile");
   var navProfileText = document.getElementsByClassName(".navProfileText");
   var scrollPosition = window.scrollY;
-  console.log(scrollPosition);
   // Belirli bir scroll pozisyonuna ulaşıldığında elementi gizle
   if (scrollPosition > 665) {
     navProfile.style.opacity = 0;
@@ -46,6 +48,8 @@ window.addEventListener("scroll", function () {
     navProfileText.style.opacity = 0;
   }
 });
+
+/* Dark theme */
 
 function BtnDarkMode() {
   var bodyElement = document.body;
@@ -63,3 +67,32 @@ function BtnDarkMode() {
     navbar.style.background = "#fff";
   }
 }
+
+/* BUtton Mail */
+
+const btnGonder = document.getElementById("btnGonder");
+btnGonder.addEventListener("click", function () {
+  if (true) swal("Başarılı!", "Mesajınız ulaştırılmıştır!", "success");
+  else swal("Başarısız!", "Yakında açılacaktır!", "error");
+});
+
+/* Modal setting */
+
+const btnOpen = document.getElementById("btnOpen");
+const btnClose = document.getElementById("btnClose");
+let modalEL = document.getElementById("modalEl");
+let overlay = document.getElementById("overlay");
+
+const closeModal = function () {
+  modalEl.style.display = "none";
+  overlay.style.display = "none";
+};
+
+btnOpen.addEventListener("click", () => {
+  modalEl.style.display = "block";
+  overlay.style.display = "block";
+});
+
+btnClose.addEventListener("click", closeModal);
+
+overlay.addEventListener("click", closeModal);

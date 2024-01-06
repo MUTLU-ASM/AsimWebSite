@@ -80,3 +80,53 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.05rem;
 }
+/******! Font settings ******/
+.listscroll-1 {
+  height: calc(48rem + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.listscroll {
+  height: calc(52rem + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+#modalEl {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  width: 70%;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+}
