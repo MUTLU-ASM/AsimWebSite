@@ -10,7 +10,9 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+
 /******! Padding settings ******/
+
 .pyx-4 {
   padding: 1rem;
 }
@@ -30,6 +32,7 @@ html {
 .py-10 {
   padding: 5rem;
 }
+
 /******! Margin settings ******/
 
 .mx-auto {
@@ -47,6 +50,7 @@ html {
 .mb-6 {
   margin-bottom: 3rem;
 }
+
 /******! Line settings ******/
 
 .line {
@@ -63,11 +67,14 @@ html {
   border-radius: 25%;
   background-color: #000;
 }
+
 /******! Font settings ******/
+
 .title {
   font-family: "Archivo", sans-serif;
   font-size: calc(1.15rem + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 700;
+  font-size: large;
   letter-spacing: 0.08rem;
 }
 .text {
@@ -80,7 +87,9 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.05rem;
 }
+
 /******! Font settings ******/
+
 .listscroll-1 {
   height: calc(48rem + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   overflow: hidden;
@@ -91,4 +100,10 @@ html {
   height: calc(52rem + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   overflow: hidden;
   overflow-y: scroll;
+}
+
+/******! Shadow settings ******/
+
+.shadows {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
 }

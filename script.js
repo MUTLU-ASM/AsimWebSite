@@ -49,12 +49,27 @@ window.addEventListener("scroll", function () {
   }
 });
 
-/* Dark theme */
+/****** Dark theme ******/
+
+/* Project Icon png */
+function ModalImg(imgBackground) {
+  let modalImg = document.querySelectorAll(".modalImg");
+  for (let img of modalImg) {
+    img.src = imgBackground;
+  }
+}
+
+/* Shadow color */
+function ShadowBoxColor(shadowColor) {
+  let shadows = document.querySelectorAll(".shadows");
+  for (let shadow of shadows) {
+    shadow.style.boxShadow = shadowColor;
+  }
+}
 
 function BtnDarkMode() {
   var bodyElement = document.body;
   let navbar = document.getElementById("Navbar");
-
   // `dark` tema sınıfını ekleyip/çıkar
   bodyElement.classList.toggle("dark-theme");
 
@@ -62,9 +77,15 @@ function BtnDarkMode() {
   if (bodyElement.classList.contains("dark-theme")) {
     bodyElement.setAttribute("data-bs-theme", "dark");
     navbar.style.background = "rgb(33, 37, 41,0.97)";
+    modalEL.style.backgroundColor = "#000";
+    ShadowBoxColor("0px 0px 10px rgba(273, 273, 273, 0.18)");
+    ModalImg("images/software-engineer-icon_darkmode.png");
   } else {
     bodyElement.removeAttribute("data-bs-theme");
     navbar.style.background = "#fff";
+    modalEL.style.backgroundColor = "#fff";
+    ShadowBoxColor("0px 0px 10px rgba(0, 0, 0, 0.18)");
+    ModalImg("images/software-engineer-icon.png");
   }
 }
 
@@ -82,15 +103,18 @@ const btnOpen = document.getElementById("btnOpen");
 const btnClose = document.getElementById("btnClose");
 let modalEL = document.getElementById("modalEl");
 let overlay = document.getElementById("overlay");
+let html = document.querySelector("html");
 
 const closeModal = function () {
   modalEl.style.display = "none";
   overlay.style.display = "none";
+  html.style.overflow = "auto";
 };
 
 btnOpen.addEventListener("click", () => {
   modalEl.style.display = "block";
   overlay.style.display = "block";
+  html.style.overflow = "hidden";
 });
 
 btnClose.addEventListener("click", closeModal);
