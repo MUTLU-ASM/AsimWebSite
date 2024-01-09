@@ -42,12 +42,9 @@
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  #Calismalar .mobile {
+  /* #Calismalar .mobile {
     padding-left: 11rem;
-  }
-  #Iletisim .offset-md {
-    padding-top: 3rem !important;
-  }
+  } */
 }
 @media only screen and (max-width: 990px) {
   #Iletisim .offset-md {
@@ -56,9 +53,88 @@
   #Iletisim .row div:first-child {
     width: auto;
   }
+  #Iletisim .offset-md {
+    padding-top: 3rem !important;
+  }
 }
 @media only screen and (max-width: 625px) {
   body {
     width: 65rem; /* Mobilde header'ın genişliğini otomatik belirle */
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #Iletisim .offset-md {
+    padding-top: 2rem !important;
+  }
+  #Iletisim .row > div {
+    width: 45rem;
+  }
+  #Iletisim .row > div:first-child {
+    margin-bottom: 2rem;
+  }
+  #Bilgiler #diller {
+    height: 26rem;
+  }
+  #Navbar a:nth-last-child(-n + 3) {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  #Navbar img {
+    width: 14rem;
+  }
+  #Hakkimda p,
+  #Hakkimda button,
+  #Bilgiler .text-content {
+    font-size: 1.2rem !important;
+    font-weight: 450;
+  }
+  #Hakkimda h1,
+  li,
+  #Bilgiler h1,
+  h3,
+  #Calismalar h1,
+  #Sertifikalar h1,
+  #Iletisim h1,
+  #darkMode {
+    font-size: 2.4rem !important;
+  }
+  #Bilgiler ul li,
+  #Bilgiler h2,
+  #Iletisim input {
+    font-size: 1.4rem !important;
+  }
+  #Sertifikalar a,
+  #Calismalar .cards h3,
+  #Bilgiler h5,
+  #Iletisim li,
+  footer ul li,
+  footer p {
+    font-size: 1.6rem !important;
+  }
+  #Iletisim label,
+  #Iletisim button,
+  .social-item {
+    font-size: 1.8rem !important;
+  }
+  #Iletisim h2 {
+    font-size: 2rem !important;
+  }
+  #Bilgiler img,
+  #Calismalar img {
+    width: 8rem !important;
+  }
+  #Bilgiler .pyx-6 {
+    padding: 2.8rem;
+  }
+  #Sertifikalar .row div {
+    width: 43rem;
+  }
+  #Sertifikalar #sertifikaImages {
+    margin-top: 10rem;
+  }
+  #Iletisim .iletisim-card,
+  iframe {
+    width: 40rem !important;
+    margin-top: 2rem;
   }
 }
