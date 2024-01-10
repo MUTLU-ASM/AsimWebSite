@@ -1,4 +1,4 @@
-@media only screen and (max-width: 780px) {
+/* @media only screen and (max-width: 780px) {
   .header-img {
     background-image: -webkit-linear-gradient(
         bottom,
@@ -14,14 +14,14 @@
     height: 85vh;
     min-height: 60rem;
     min-width: 60rem;
-    width: auto; /* Mobilde header'ın genişliğini otomatik belirle */
+    width: auto; /* Mobilde header'ın genişliğini otomatik belirle 
   }
   .social-link {
     color: #fff !important;
   }
   .nvbr {
     max-width: 60rem;
-    max-width: auto; /* Mobilde header'ın genişliğini otomatik belirle */
+    max-width: auto; /* Mobilde header'ın genişliğini otomatik belirle 
   }
   .border-end:first-child {
     padding-bottom: 3rem !important;
@@ -37,16 +37,16 @@
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-@media only screen and (max-width: 870px) {
+} */
+/* @media only screen and (max-width: 870px) {
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
   }
   /* #Calismalar .mobile {
     padding-left: 11rem;
-  } */
-}
-@media only screen and (max-width: 990px) {
+  /* }  
+} */
+/* @media only screen and (max-width: 990px) {
   #Iletisim .offset-md {
     padding-top: 3rem !important;
   }
@@ -59,34 +59,27 @@
 }
 @media only screen and (max-width: 625px) {
   body {
-    width: 65rem; /* Mobilde header'ın genişliğini otomatik belirle */
+    width: 65rem; /* Mobilde header'ın genişliğini otomatik belirle 
   }
-}
-@media only screen and (max-width: 1200px) {
+}*/
+/************************************************************/
+/** BELLOW  1200px
+/************************************************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 50.5% !important;
+  }
   #Iletisim .offset-md {
     padding-top: 2rem !important;
   }
   #Iletisim .row > div {
-    width: 45rem;
-  }
-  #Iletisim .row > div:first-child {
-    margin-bottom: 2rem;
+    width: 70rem;
   }
   #Bilgiler #diller {
-    height: 26rem;
+    height: 27rem;
   }
-  #Navbar a:nth-last-child(-n + 3) {
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-  #Navbar img {
-    width: 14rem;
-  }
-  #Hakkimda p,
-  #Hakkimda button,
   #Bilgiler .text-content {
-    font-size: 1.2rem !important;
-    font-weight: 450;
+    font-size: 1.6rem;
   }
   #Hakkimda h1,
   li,
@@ -96,45 +89,94 @@
   #Sertifikalar h1,
   #Iletisim h1,
   #darkMode {
-    font-size: 2.4rem !important;
+    font-size: 2.8rem !important;
   }
+  #Calismalar .cards h3,
   #Bilgiler ul li,
   #Bilgiler h2,
-  #Iletisim input {
-    font-size: 1.4rem !important;
-  }
-  #Sertifikalar a,
-  #Calismalar .cards h3,
   #Bilgiler h5,
+  #Iletisim input,
   #Iletisim li,
   footer ul li,
   footer p {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
   }
   #Iletisim label,
   #Iletisim button,
   .social-item {
-    font-size: 1.8rem !important;
-  }
-  #Iletisim h2 {
     font-size: 2rem !important;
   }
   #Bilgiler img,
   #Calismalar img {
-    width: 8rem !important;
+    width: 9rem !important;
   }
   #Bilgiler .pyx-6 {
-    padding: 2.8rem;
+    padding: 2.4rem;
   }
   #Sertifikalar .row div {
-    width: 43rem;
+    width: 55rem;
   }
   #Sertifikalar #sertifikaImages {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
-  #Iletisim .iletisim-card,
-  iframe {
-    width: 40rem !important;
-    margin-top: 2rem;
+}
+/************************************************************/
+/** BELLOW  990 px 
+/************************************************************/
+@media (max-width: 62em) {
+  html {
+    font-size: 39.5% !important;
+  }
+  #Navbar .nav-first {
+    justify-content: right;
+  }
+  #Navbar .nav-second {
+    justify-content: left;
+  }
+  #Navbar .col-md {
+    padding: 0%;
+  }
+  #Sertifikalar .row div {
+    width: 52rem;
+  }
+  #Iletisim .row > div {
+    width: 65rem;
+  }
+  #Bilgiler #hobiler {
+    margin-bottom: 1rem;
+  }
+  .header-content {
+    position: relative;
+    top: 30%;
+    left: 10%;
+  }
+  .social-item {
+    font-size: 2.4rem !important;
+  }
+  #darkMode {
+    font-size: 3.4rem !important;
+  }
+}
+/************************************************************/
+/** BELLOW  768 px 
+/************************************************************/
+@media (max-width: 48em) {
+  #Navbar .nav-first,
+  .nav-second {
+    width: 40rem;
+  }
+  .border-end:first-child {
+    padding-bottom: 3rem !important;
+  }
+  .border-end {
+    border-right: none !important;
+    border-bottom: solid 0.8px;
+    margin-bottom: 3rem !important;
+  }
+  #Sertifikalar .row div {
+    width: 100%;
+  }
+  #Iletisim .row > div {
+    width: 100%;
   }
 }
