@@ -1,5 +1,4 @@
 /******! Social icons ******/
-
 .social-icons {
   list-style-type: none;
   display: flex;
@@ -15,9 +14,7 @@
 .social-item:hover {
   transform: scale(1.1);
 }
-
 /******! Header ******/
-
 .header-img {
   height: 90vh;
   min-height: 60rem;
@@ -37,7 +34,6 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-
 .header-content {
   position: absolute;
   margin: 18rem 8rem;
@@ -45,12 +41,10 @@
   user-select: none;
   width: min-content;
 }
-
 /* (font-size: calc ) Bu CSS özelliği, tarayıcı genişliğine bağlı olarak bir fontun boyutunu dinamik olarak ayarlamak için kullanılır.
 calc fonksiyonu içindeki formül, belirli bir tarayıcı genişliği aralığında minimum ve maksimum font boyutları 
 arasında lineer bir geçiş sağlar. Bu sayede, web tasarımı responsive (duyarlı) hale getirilebilir,
 farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edilebilir. */
-
 .header-subtitle {
   width: max-content;
   font-weight: 200;
@@ -70,9 +64,7 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   letter-spacing: 0.5rem;
   width: max-content;
 }
-
 /******! Navbar ******/
-
 .nvbr {
   font-size: 1.8rem;
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
@@ -81,7 +73,6 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   z-index: 100;
   background: rgba(255, 255, 255, 0.97);
 }
-
 .nvbr ul li a {
   font-size: 2.1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -94,7 +85,6 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   text-underline-offset: 2rem;
   color: #f62b45 !important;
 }
-
 .nvbr img {
   position: absolute;
   left: 50%;
@@ -146,7 +136,6 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   backdrop-filter: blur(3px);
 }
 /******! About ******/
-
 #Hakkimda ul {
   justify-items: center;
 }
@@ -154,14 +143,11 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   transition: all 0.97s;
 }
 /******! Certificates ******/
-
 #Sertifikalar .active {
   background-color: #f62b45 !important;
   border: none !important;
 }
-
 /******! Projects ******/
-
 .cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -186,7 +172,6 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   z-index: 1;
   transform: translateY(10rem);
 }
-
 .cards:hover .card-top {
   background: transparent;
   transform: translateY(0);
@@ -201,7 +186,6 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   /* box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); */
   transform: translateY(-10rem);
 }
-
 .cards:hover .card-bottom {
   transform: translateY(0);
 }
@@ -223,9 +207,7 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   align-items: center;
   justify-content: center;
 }
-
 /******! Contact ******/
-
 iframe {
   width: 100%;
   height: 25rem;
@@ -234,15 +216,11 @@ iframe {
   font-size: 1.8rem !important;
   font-weight: 500 !important;
 }
-
 /******! Footer ******/
-
 footer ul a:hover {
   color: #000 !important;
 }
-
 /******! Modal ******/
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

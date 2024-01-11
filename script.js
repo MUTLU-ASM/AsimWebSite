@@ -1,4 +1,4 @@
-/* Image scroll */
+// #region Image scroll
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
@@ -30,49 +30,47 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+// #endregion
 
-/* Navbar Photo */
-
+// #region Navbar Photo
 window.addEventListener("scroll", function () {
   var navProfile = document.getElementById("navProfile");
   var navProfileText = document.getElementsByClassName("navProfileText");
   var scrollPosition = window.scrollY;
-
   // Belirli bir scroll pozisyonuna ulaşıldığında elementi gizle
   if (scrollPosition > 665) {
     navProfile.style.opacity = 0;
     navProfile.style.transition = "opacity 0.8s ease";
-
     // HTMLCollection üzerinde döngü ile tüm elemanlara stil uygula
     for (var i = 0; i < navProfileText.length; i++) {
       navProfileText[i].style.opacity = 1;
     }
   } else {
     navProfile.style.opacity = 1;
-
     // HTMLCollection üzerinde döngü ile tüm elemanlara stil uygula
     for (var i = 0; i < navProfileText.length; i++) {
       navProfileText[i].style.opacity = 0;
     }
   }
 });
-/****** Dark theme ******/
+// #endregion
 
-/* Project Icon png */
+// #region Dark theme
+/* Project Icon png for darkmode*/
 function ModalImg(imgBackground) {
   let modalImg = document.querySelectorAll(".modalImg");
   for (let img of modalImg) {
     img.src = imgBackground;
   }
 }
-
-/* Shadow color */
+/* Shadow color for darkmode*/
 function ShadowBoxColor(shadowColor) {
   let shadows = document.querySelectorAll(".shadows");
   for (let shadow of shadows) {
     shadow.style.boxShadow = shadowColor;
   }
 }
+/* DropDown List text color for darkmode */
 function MenuLinkColor(menuLink) {
   var dropdownLinks = document.querySelectorAll(".dropdown-menu li a");
   for (let links of dropdownLinks) {
@@ -82,6 +80,7 @@ function MenuLinkColor(menuLink) {
 function BtnDarkMode() {
   var bodyElement = document.body;
   let navbar = document.getElementById("Navbar");
+  let navbarImg = document.querySelector(".nvbr img");
   // `dark` tema sınıfını ekleyip/çıkar
   bodyElement.classList.toggle("dark-theme");
 
@@ -95,6 +94,7 @@ function BtnDarkMode() {
     ModalImg("images/software-engineer-icon_darkmode.png");
     dropMenuList.style.backgroundColor = "rgb(33, 37, 41,0.97)";
     MenuLinkColor("#fff");
+    navbarImg.style.border = "8px solid #212529";
   } else {
     bodyElement.removeAttribute("data-bs-theme");
     navbar.style.background = "#fff";
@@ -103,19 +103,20 @@ function BtnDarkMode() {
     ModalImg("images/software-engineer-icon.png");
     dropMenuList.style.backgroundColor = "#ffffff";
     MenuLinkColor("#333");
+    navbarImg.style.border = "8px solid #fff";
   }
 }
+// #endregion
 
-/* BUtton Mail */
-
+// #region Button Mail */
 const btnGonder = document.getElementById("btnGonder");
 btnGonder.addEventListener("click", function () {
   if (true) swal("ARIZALI!", "En kısa sürede hizmete girecektir!", "info");
   else swal("Başarısız!", "Yakında açılacaktır!", "error");
 });
+// #endregion
 
-/* Modal setting */
-
+// #region Modal setting
 const btnOpen = document.getElementById("btnOpen");
 const btnClose = document.getElementById("btnClose");
 let modalEL = document.getElementById("modalEl");
@@ -137,26 +138,23 @@ btnOpen.addEventListener("click", () => {
 btnClose.addEventListener("click", closeModal);
 
 overlay.addEventListener("click", closeModal);
+// #endregion
 
-/* Cv Download */
-
+// #region Cv Download */
 document.getElementById("indirButton").addEventListener("click", function () {
   // CV dosyanızın bulunduğu yolu belirtin
   var cvDosyaYolu = "Asim_Mutlu_Cv.pdf";
-
   // İndirme işlemi için bir bağlantı oluşturun
   var indirLink = document.createElement("a");
   indirLink.href = cvDosyaYolu;
-
   // Dosyanın ismini belirtin (isteğe bağlı)
   indirLink.download = "Asim_Mutlu_Cv.pdf";
-
   // Bağlantıyı tıklayarak indirme işlemi başlatın
   indirLink.click();
 });
+// #endregion
 
-/* Drop Down List açılınca arkaplan bulanıklaştır */
-
+// #region Drop Down List blur
 let btnDropMenu = document.querySelector(".btnDropMenu");
 let dropMenuList = document.getElementById("dropMenuList");
 let blur = document.getElementById("blur");
@@ -174,3 +172,4 @@ menuIcon.addEventListener("click", () => {
     ? menuIcon.classList.replace("bi-list", "bi-x")
     : menuIcon.classList.replace("bi-x", "bi-list");
 });
+// #endregion
