@@ -179,4 +179,7 @@
   #Iletisim .row > div {
     width: 100%;
   }
+  .btn-mobile-nav {
+    display: block;
+  }
 }

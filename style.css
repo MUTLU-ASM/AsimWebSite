@@ -43,6 +43,7 @@
   margin: 18rem 8rem;
   color: #fff;
   user-select: none;
+  width: min-content;
 }
 
 /* (font-size: calc ) Bu CSS özelliği, tarayıcı genişliğine bağlı olarak bir fontun boyutunu dinamik olarak ayarlamak için kullanılır.
@@ -51,6 +52,7 @@ arasında lineer bir geçiş sağlar. Bu sayede, web tasarımı responsive (duya
 farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edilebilir. */
 
 .header-subtitle {
+  width: max-content;
   font-weight: 200;
   font-size: calc(16px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -60,11 +62,13 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   opacity: 0.8;
   line-height: 0.7;
   margin-bottom: 2.5rem;
+  width: max-content;
 }
 .header-mono {
   font-weight: 500;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 0.5rem;
+  width: max-content;
 }
 
 /******! Navbar ******/
@@ -102,7 +106,43 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-
+/*Mobile button*/
+.btn-mobile-nav {
+  z-index: 999;
+  margin-left: 2rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  cursor: pointer;
+  display: none;
+}
+.btn-mobile-nav button {
+  border: none;
+  font-size: 3rem !important;
+}
+.dropdown-menu {
+  border: none;
+  border-radius: 5%;
+  background-color: #fff;
+}
+.dropdown-menu li a {
+  width: max-content;
+  color: #333;
+  margin: 2rem;
+}
+.dropdown-menu li:hover {
+  color: #f62b45;
+}
+.blur {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+}
 /******! About ******/
 
 #Hakkimda ul {

@@ -138,3 +138,14 @@ document.getElementById("indirButton").addEventListener("click", function () {
   // Bağlantıyı tıklayarak indirme işlemi başlatın
   indirLink.click();
 });
+
+/* Drop Down List açılınca arkaplan bulanıklaştır */
+
+let btnDropMenu = document.querySelector(".btnDropMenu");
+let blur = document.getElementById("blur");
+function blurBodyControl() {
+  blur.style.display = blur.style.display === "block" ? "none" : "block";
+  html.style.overflow = html.style.overflow === "hidden" ? "auto" : "hidden";
+}
+btnDropMenu.addEventListener("click", blurBodyControl);
+blur.addEventListener("click", blurBodyControl);
