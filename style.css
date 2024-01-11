@@ -109,7 +109,8 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 /*Mobile button*/
 .btn-mobile-nav {
   z-index: 999;
-  margin-left: 2rem;
+  padding: 0 8rem 8rem 0;
+  margin: 1rem 0 0 0;
   width: 4.8rem;
   height: 4.8rem;
   cursor: pointer;
@@ -117,12 +118,13 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 }
 .btn-mobile-nav button {
   border: none;
-  font-size: 3rem !important;
+  font-size: 5rem !important;
 }
 .dropdown-menu {
   border: none;
+  padding: 1rem;
   border-radius: 5%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .dropdown-menu li a {
   width: max-content;

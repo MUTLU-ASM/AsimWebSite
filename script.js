@@ -12,16 +12,16 @@ const swiper = new Swiper(".swiper", {
     // when window width is >= 320px
     520: {
       slidesPerView: 1,
-      spaceBetween: -100,
+      spaceBetween: -200,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 0,
+      spaceBetween: -200,
     },
     // when window width is >= 480px
     1024: {
       slidesPerView: 3,
-      spaceBetween: 0,
+      spaceBetween: 90,
     },
     // when window width is >= 640px
     1280: {
@@ -35,20 +35,27 @@ const swiper = new Swiper(".swiper", {
 
 window.addEventListener("scroll", function () {
   var navProfile = document.getElementById("navProfile");
-  var navProfileText = document.getElementsByClassName(".navProfileText");
+  var navProfileText = document.getElementsByClassName("navProfileText");
   var scrollPosition = window.scrollY;
+
   // Belirli bir scroll pozisyonuna ulaşıldığında elementi gizle
   if (scrollPosition > 665) {
     navProfile.style.opacity = 0;
     navProfile.style.transition = "opacity 0.8s ease";
-    navProfileText.style.opacity = 1;
-    console.log(navProfileText);
+
+    // HTMLCollection üzerinde döngü ile tüm elemanlara stil uygula
+    for (var i = 0; i < navProfileText.length; i++) {
+      navProfileText[i].style.opacity = 1;
+    }
   } else {
     navProfile.style.opacity = 1;
-    navProfileText.style.opacity = 0;
+
+    // HTMLCollection üzerinde döngü ile tüm elemanlara stil uygula
+    for (var i = 0; i < navProfileText.length; i++) {
+      navProfileText[i].style.opacity = 0;
+    }
   }
 });
-
 /****** Dark theme ******/
 
 /* Project Icon png */
@@ -66,7 +73,12 @@ function ShadowBoxColor(shadowColor) {
     shadow.style.boxShadow = shadowColor;
   }
 }
-
+function MenuLinkColor(menuLink) {
+  var dropdownLinks = document.querySelectorAll(".dropdown-menu li a");
+  for (let links of dropdownLinks) {
+    links.style.color = menuLink;
+  }
+}
 function BtnDarkMode() {
   var bodyElement = document.body;
   let navbar = document.getElementById("Navbar");
@@ -81,12 +93,16 @@ function BtnDarkMode() {
     modalEL.style.boxShadow = "0px 0px 10px rgba(273, 273, 273, 0.30)";
     ShadowBoxColor("0px 0px 10px rgba(273, 273, 273, 0.18)");
     ModalImg("images/software-engineer-icon_darkmode.png");
+    dropMenuList.style.backgroundColor = "rgb(33, 37, 41,0.97)";
+    MenuLinkColor("#fff");
   } else {
     bodyElement.removeAttribute("data-bs-theme");
     navbar.style.background = "#fff";
     modalEL.style.backgroundColor = "#fff";
     ShadowBoxColor("0px 0px 10px rgba(0, 0, 0, 0.18)");
     ModalImg("images/software-engineer-icon.png");
+    dropMenuList.style.backgroundColor = "#ffffff";
+    MenuLinkColor("#333");
   }
 }
 
@@ -94,7 +110,7 @@ function BtnDarkMode() {
 
 const btnGonder = document.getElementById("btnGonder");
 btnGonder.addEventListener("click", function () {
-  if (true) swal("Başarılı!", "Mesajınız ulaştırılmıştır!", "success");
+  if (true) swal("ARIZALI!", "En kısa sürede hizmete girecektir!", "info");
   else swal("Başarısız!", "Yakında açılacaktır!", "error");
 });
 
@@ -142,6 +158,7 @@ document.getElementById("indirButton").addEventListener("click", function () {
 /* Drop Down List açılınca arkaplan bulanıklaştır */
 
 let btnDropMenu = document.querySelector(".btnDropMenu");
+let dropMenuList = document.getElementById("dropMenuList");
 let blur = document.getElementById("blur");
 function blurBodyControl() {
   blur.style.display = blur.style.display === "block" ? "none" : "block";
@@ -149,3 +166,11 @@ function blurBodyControl() {
 }
 btnDropMenu.addEventListener("click", blurBodyControl);
 blur.addEventListener("click", blurBodyControl);
+dropMenuList.addEventListener("click", blurBodyControl);
+
+let menuIcon = document.getElementById("menu-icon");
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.contains("bi-list")
+    ? menuIcon.classList.replace("bi-list", "bi-x")
+    : menuIcon.classList.replace("bi-x", "bi-list");
+});

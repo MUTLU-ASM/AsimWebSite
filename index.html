@@ -127,15 +127,17 @@
       </div>
       <div class="btn-group dropstart btn-mobile-nav ms-auto">
         <button class="btn btnDropMenu" type="button" data-bs-toggle="dropdown">
-          <i class="bi bi-list"></i>
+          <i id="menu-icon" class="bi bi-list"></i>
         </button>
         <ul class="dropdown-menu" id="dropMenuList">
-          <li><a class="dropdown-item" href="#">Anasayfa</a></li>
-          <li><a class="dropdown-item" href="#">Hakkımda</a></li>
-          <li><a class="dropdown-item" href="#">Bilgiler</a></li>
-          <li><a class="dropdown-item" href="#">Çalışmalar</a></li>
-          <li><a class="dropdown-item" href="#">Sertifikalar</a></li>
-          <li><a class="dropdown-item" href="#">İletişim</a></li>
+          <li><a class="dropdown-item" href="#Anasayfa">Anasayfa</a></li>
+          <li><a class="dropdown-item" href="#Hakkimda">Hakkımda</a></li>
+          <li><a class="dropdown-item" href="#Bilgiler">Bilgiler</a></li>
+          <li><a class="dropdown-item" href="#Calismalar">Çalışmalar</a></li>
+          <li>
+            <a class="dropdown-item" href="#Sertifikalar">Sertifikalar</a>
+          </li>
+          <li><a class="dropdown-item" href="#Iletisim">İletişim</a></li>
         </ul>
       </div>
     </div>
@@ -1103,7 +1105,7 @@
       <div class="container py-4">
         <footer class="py-3 my-4 fs-3">
           <ul
-            class="nav justify-content-center border-bottom pb-3 mb-4 fw-medium"
+            class="nav justify-content-center border-bottom pb-3 mb-4 fw-medium flex-column flex-sm-row text-center"
           >
             <li class="nav-item">
               <a href="#Anasayfa" class="nav-link px-5 text-light">Anasayfa</a>
