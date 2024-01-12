@@ -93,6 +93,9 @@
   #darkMode {
     font-size: 3.4rem !important;
   }
+  #Calismalar .swiper-wrapper p {
+    font-size: 1.4rem;
+  }
 }
 /************************************************************/
 /** BELLOW  768 px 
@@ -136,12 +139,12 @@
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
       ),
-      url(images/home-avatar2.jpg);
+      url(images/home-avatar2.png);
     background-image: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6)
       ),
-      url(images/home-avatar2.jpg);
+      url(images/home-avatar2.png);
   }
   #Calismalar .mobile {
     padding-left: 9rem;
@@ -167,7 +170,6 @@
     margin-right: 0;
     width: 8rem;
   }
-
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }

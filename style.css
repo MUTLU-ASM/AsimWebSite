@@ -23,12 +23,12 @@
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url(images/home-avatar.jpg);
+    url(images/home-avatar.png);
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6)
     ),
-    url(images/home-avatar.jpg);
+    url(images/home-avatar.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -146,6 +146,10 @@ farklı ekran boyutlarına uygun okunabilirlik ve estetik bir deneyim elde edile
 #Sertifikalar .active {
   background-color: #f62b45 !important;
   border: none !important;
+}
+#Sertifikalar img {
+  width: 100% !important;
+  height: 100% !important;
 }
 /******! Projects ******/
 .cards-container {
