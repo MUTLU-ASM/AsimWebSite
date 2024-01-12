@@ -225,6 +225,7 @@ footer ul a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem;
+  cursor: pointer;
 }
 .gallery-item {
   overflow: hidden;
@@ -232,6 +233,7 @@ footer ul a:hover {
 .gallery-item img {
   display: block;
   width: 100%;
+  height: 100%;
   transition: all 0.4s;
   border-radius: 1rem;
 }
