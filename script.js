@@ -173,3 +173,8 @@ menuIcon.addEventListener("click", () => {
     : menuIcon.classList.replace("bi-x", "bi-list");
 });
 // #endregion
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  loader.classList.add("loader-hidden");
+});
