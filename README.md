@@ -24,7 +24,7 @@ Bu proje, kendi kişisel websitesini tasarlama ve geliştirme sürecini gösterm
 <table>
   <tr>
     <td>
-      <img src="https://imgyukle.com/i/yqmNmN" alt="Açıklama 1">
+      <img src="https://i.hizliresim.com/1mnsmc2.png" alt="Açıklama 1">
     </td>
     <td>
       <img src="https://imgyukle.com/i/yqmaAR" alt="Açıklama 2">
