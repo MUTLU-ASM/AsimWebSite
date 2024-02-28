@@ -27,23 +27,23 @@ Bu proje, kendi kişisel websitesini tasarlama ve geliştirme sürecini gösterm
       <img src="https://i.hizliresim.com/1mnsmc2.png" alt="Açıklama 1">
     </td>
     <td>
-      <img src="https://imgyukle.com/i/yqmaAR" alt="Açıklama 2">
+      <img src="https://i.hizliresim.com/p46z24m.png" alt="Açıklama 2">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="https://imgyukle.com/i/yqmLIe" alt="Açıklama 3">
+      <img src="https://i.hizliresim.com/ki0v73s.png" alt="Açıklama 3">
     </td>
     <td>
-      <img src="https://imgyukle.com/i/yqmIRQ" alt="Açıklama 4">
+      <img src="https://i.hizliresim.com/l3ask3h.png" alt="Açıklama 4">
     </td>
   </tr>
     <tr>
     <td>
-      <img src="https://imgyukle.com/i/yqmY2c" alt="Açıklama 3">
+      <img src="https://i.hizliresim.com/an6gufr.png" alt="Açıklama 3">
     </td>
     <td>
-      <img src="https://imgyukle.com/i/yqmTNt" alt="Açıklama 4">
+      <img src="https://i.hizliresim.com/i7gg3g6.png" alt="Açıklama 4">
     </td>
   </tr>
 </table>
